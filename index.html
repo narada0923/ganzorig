@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header" class="header">
+        <video autoplay loop class="backgorund-video" muted plays-inline>
+            <source src="1.mp4">
+        </video>
+        <div class="navbar">
+            <img src="./Logo/logo.png" alt="">
+            <div class="bars">
+              <i class="fas fa-bars"></i>
+            </div>
+            <a href="#header">
+                <h2>
+                    Home
+                </h2>
+            </a>
+            <a href="#container">
+                <h2>
+                    About
+                </h2>
+            </a>
+            <a href="#hobby">
+                <h2>
+                    Hobby
+                </h2>
+            </a>
+            <a href="#footer">
+                <h2>
+                    Contact
+                </h2>
+            </a>
+        </div>
+    
+        <div class="glass">
+            <div class="right">
+                <h3>
+                    Д.Ганзоригт
+                </h3>
+            </div>
+            <div class="left">
+                <p>
+                    Мэдээллийн технологийн салбарын Программ хангамжийн мэргэжил сонирхолтой санагдаад хэд хэдэн сургалтын байгууллагуудтай
+                    холбогдсоны эцэст "Амжилт академи"-ийг сонгосондоо баяртай байна.
+                </p>
+            </div>
+        </div>
+    </section>
+
+<!-- header end duussan -->
+
+<div id="container" class="container">
+    <div class="card">
+        <div class="imgBx">
+            <img src="./Logo/HTML.png" alt="html">
+        </div>
+        <div class="content">
+            <div class="first">
+                <h2>HTML</h2>
+                <div class="circle">
+                    <p>90%</p>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="imgBx">
+            <img src="./Logo/CSS.png" alt="">
+        </div>
+        <div class="content">
+            <div class="second">
+                <h2>CSS</h2>
+                <div class="circle">
+                    <p>90%</p>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="imgBx">
+            <img src="./Logo/JS.png" alt="">
+        </div>
+        <div class="content">
+            <h2>Java Script</h2>
+            <div class="circle">
+                <p>10%</p>
+            </div> 
+        </div>
+    </div>
+</div>
+
+<!-- about duussan -->
+
+<div id="hobby" class="hobby">
+    <div class="text">
+        <h2>Video Games: <span></span></h2>
+    </div>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./Logo/1.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./Logo/2.png" alt=""></div>
+          <div class="swiper-slide"><img src="./Logo/3.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./Logo/4.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./Logo/5.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./Logo/6.jpg" alt=""></div>
+        </div>
+      </div>
+</div>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        grabCursor: true,
+        effect: "creative",
+        creativeEffect: {
+          prev: {
+            shadow: true,
+            translate: [0, 0, -400],
+          },
+          next: {
+            translate: ["100%", 0, 0],
+          },
+        },
+        loop: true
+      });
+</script>
+
+
+
+
+<div id="footer" class="background">
+    <div class="container">
+      <div class="screen">
+        <div class="screen-header">
+          <div class="screen-header-left">
+            <div class="screen-header-button close"></div>
+            <div class="screen-header-button maximize"></div>
+            <div class="screen-header-button minimize"></div>
+          </div>
+          <div class="screen-header-right">
+            <div class="screen-header-ellipsis"></div>
+            <div class="screen-header-ellipsis"></div>
+            <div class="screen-header-ellipsis"></div>
+          </div>
+        </div>
+        <div class="screen-body">
+          <div class="screen-body-item left">
+            <div class="app-title">
+              <h1>CONTACT</h1>
+              <h1>US</h1>
+            </div>
+            <div class="app-contact">CONTACT INFO : +976 88167238</div>
+          </div>
+          <div class="screen-body-item">
+            <div class="app-form">
+              <div class="app-form-group">
+                <input class="app-form-control" placeholder="NAME" value="Ganzorigt.D">
+              </div>
+              <div class="app-form-group">
+                <input class="app-form-control" placeholder="EMAIL">
+              </div>
+              <div class="app-form-group">
+                <input class="app-form-control" placeholder="CONTACT NO">
+              </div>
+              <div class="app-form-group message">
+                <input class="app-form-control" placeholder="MESSAGE">
+              </div>
+              <div class="app-form-group buttons">
+                <button class="app-form-button">CANCEL</button>
+                <button class="app-form-button">SEND</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+</div>
+</body>
+</html>
